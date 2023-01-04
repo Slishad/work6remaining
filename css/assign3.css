@@ -12,8 +12,8 @@ header{
     padding-left: 20px;
     padding-top: 72px;
     padding-right: 30px;
-    display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
 }
 .left{
@@ -37,6 +37,8 @@ article{
     padding-bottom: 5px;
     padding-top: 10px;
     height: 50vh;
+    flex:wrap;
+
 }
 .picture{
     display: flex;
@@ -45,3 +47,13 @@ img{
     height: 45vh;
     width: 175vh;
 }
+@media only screen and (max-width: 1000px) {
+      img{
+        width: 100vh;
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  
